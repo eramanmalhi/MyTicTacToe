@@ -173,3 +173,7 @@ button:hover {
 #player-turn:hover {
     background-color: #011a0e; /* Brighter background color on hover */
 }
+.container {
+    height: 100vh; /* Set container height to 100% of viewport height */
+    overflow-y: auto; /* Add vertical scrollbar when content exceeds container height */
+}
