@@ -85,6 +85,7 @@ function makeMove(cellIndex) {
             alert("It's a tie!");
         }
         gameActive = false;
+        startTime=new Date();
         resetGame();
     } else {
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
