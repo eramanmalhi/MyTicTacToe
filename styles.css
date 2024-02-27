@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #182237; /* Vibrant background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Padding at the top and bottom */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Add rounded corners */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a clean sans-serif font */
+    font-size: 28px; /* Increase font size for elegance */
+    letter-spacing: 2px; /* Add some letter spacing for emphasis */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.header:hover {
+    background-color: #011a0e; /* Brighter background color on hover */
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.player-input {
+    margin-bottom: 20px;
+}
+
+.player-input input {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #182237;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #011a0e;
+}
+
+#tic-tac-toe-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: lightgray;
+}
+#game-history {
+    margin-top: 20px;
+}
+
+.game-header {
+    background-color: #182237;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-header-row:hover {
+    background-color: #011a0e; /* Brighter background color on hover */
+}
+
+.game-header-row div {
+    flex: 1;
+    text-align: center;
+}
+
+.game-header-row .game-number {
+    flex: 0 0 10%;
+}
+
+.game-header-row .game-status {
+    flex: 0 0 20%;
+}
+
+.game-header-row .winner-name {
+    flex: 0 0 30%;
+}
+
+.game-header-row .time-taken {
+    flex: 0 0 20%;
+}
+
+.game-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-row:hover {
+    background-color: #ececec;
+}
+
+.game-row div {
+    flex: 1;
+    text-align: center;
+}
+
+.game-row .game-number {
+    flex: 0 0 10%;
+}
+
+.game-row .game-status {
+    flex: 0 0 20%;
+}
+
+.game-row .winner-name {
+    flex: 0 0 30%;
+}
+
+.game-row .time-taken {
+    flex: 0 0 20%;
+}
+#player-turn {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #182237;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#player-turn:hover {
+    background-color: #011a0e; /* Brighter background color on hover */
+}

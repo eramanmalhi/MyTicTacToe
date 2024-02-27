@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Programmer | Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Lazy Programmer | Tic Tac Toe</h1>
+    </div>
+
+    <div id="start-screen" class="start-screen">
+        <div class="player-input">
+            <input type="text" id="playerXName" placeholder="Player X name">
+            <input type="text" id="playerOName" placeholder="Player O name">
+        </div>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+<table style="width: 100%;">
+    <tr>
+        <td>
+            <div id="tic-tac-toe-board" style="display: none;">
+                <div id="player-turn"></div><br>
+                <div class="row">
+                    <div class="cell" onclick="makeMove(0)"></div>
+                    <div class="cell" onclick="makeMove(1)"></div>
+                    <div class="cell" onclick="makeMove(2)"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" onclick="makeMove(3)"></div>
+                    <div class="cell" onclick="makeMove(4)"></div>
+                    <div class="cell" onclick="makeMove(5)"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" onclick="makeMove(6)"></div>
+                    <div class="cell" onclick="makeMove(7)"></div>
+                    <div class="cell" onclick="makeMove(8)"></div>
+                </div>
+                <br>
+                <button onclick="resetGame()">Reset Game</button>
+            </div>
+        </td>
+        <td style="width: 60%;vertical-align: top;">
+            <div id="game-history" style="display: none;">
+            </div>
+        </td>
+    </tr>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
